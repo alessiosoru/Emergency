@@ -4,7 +4,7 @@ import java.time.LocalTime;
 
 public class Paziente {
 	
-	public enum StatoPaziente {
+	public enum StatoPaziente{
 		NEW,
 		WAITING_WHITE,
 		WAITING_YELLOW,
@@ -14,14 +14,14 @@ public class Paziente {
 		BLACK,
 	}
 	
-	private int id ;
-	private StatoPaziente stato ;
-	private LocalTime oraArrivo ;
+	private int id;
+	private StatoPaziente stato;
+	private LocalTime oraArrivo;
 	
 	public Paziente(int id, LocalTime oraArrivo) {
-		this.id = id ;
-		this.oraArrivo = oraArrivo ;
-		this.stato = StatoPaziente.NEW ;
+		this.id = id;
+		this.oraArrivo = oraArrivo;
+		this.stato = StatoPaziente.NEW;
 	}
 
 	public int getId() {
@@ -50,9 +50,8 @@ public class Paziente {
 
 	@Override
 	public String toString() {
-		return String.format("Paziente [id=%s, stato=%s, oraArrivo=%s]", id, stato, oraArrivo);
+		return "Paziente [id=" + id + ", stato=" + stato + ", oraArrivo=" + oraArrivo + "]";
 	}
 	
 	
-
 }
